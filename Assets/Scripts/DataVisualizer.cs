@@ -9,8 +9,11 @@ using Microsoft.MixedReality.Toolkit.UI;
 public class DataVisualizer : MonoBehaviour
 {
     public PressableButtonHoloLens2[] DateButtons;
+    public PressableButtonHoloLens2[] RegionalButtons;
     public PressableButtonHoloLens2 SelectedDate = null;
+    public PressableButtonHoloLens2 SelectedRegion = null;
     public string CurrentDate;
+    public string CurrentRegion;
 
     public int totalCases = 0;
     public int confirmedCasesIndian = 0;
@@ -75,5 +78,11 @@ public class DataVisualizer : MonoBehaviour
                 print("discharged" + discharged);
             }
         }
+    }
+
+    public void PrintRegionalData(PressableButtonHoloLens2 SelectedRegionButton)
+    {
+        SelectedRegion = SelectedRegionButton;
+        CurrentRegion = SelectedRegion.GetComponent<ButtonManager>().Label;
     }
 }
