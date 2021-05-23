@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Networking;
 using SimpleJSON;
@@ -10,7 +9,14 @@ using Microsoft.MixedReality.Toolkit.UI;
 public class DataVisualizer : MonoBehaviour
 {
     public PressableButtonHoloLens2[] DateButtons;
-    public string Date;
+    public PressableButtonHoloLens2 SelectedDate = null;
+    public string CurrentDate;
+
+    public int totalCases = 0;
+    public int confirmedCasesIndian = 0;
+    public int confirmedCasesForeign = 0;
+    public int discharged = 0;
+    public int deaths = 0;
 
     private JSONArray dataArray;
     private const string URL = "https://api.rootnet.in/covid19-in/stats/history";
@@ -49,14 +55,24 @@ public class DataVisualizer : MonoBehaviour
         StartCoroutine(LoadJSONfromWeb());
     }
 
-    public void PrintData()
+    public void PrintData(PressableButtonHoloLens2 SelectedButton)
     {
-        for (int i = 0; i<DateButtons.Length; i++)
+        SelectedDate = SelectedButton;
+        CurrentDate = SelectedDate.GetComponent<ButtonManager>().Label;
+        for(int i = 0; i<dataArray.Count; i++)
         {
-            Date = DateButtons[i].GetComponentInChildren<TextMeshPro>().text;
-            if(Date == dataArray[dataArray.Count - 1]["day"])
+            if(CurrentDate == dataArray[i]["day"].Value)
             {
-                print(dataArray[dataArray.Count-1]["summary"]["total"]);
+                totalCases = dataArray[i]["summary"]["total"].AsInt;
+                print("totalCases" + totalCases);
+                deaths = dataArray[i]["summary"]["deaths"].AsInt;
+                print("deaths" + deaths);
+                confirmedCasesIndian = dataArray[i]["summary"]["confirmedCasesIndian"].AsInt;
+                print("confirmedCasesIndian" + confirmedCasesIndian);
+                confirmedCasesForeign = dataArray[i]["summary"]["confirmedCasesForeign"].AsInt;
+                print("confirmedCasesForeign" + confirmedCasesForeign);
+                discharged = dataArray[i]["summary"]["discharged"].AsInt;
+                print("discharged" + discharged);
             }
         }
     }
