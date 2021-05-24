@@ -736,7 +736,7 @@ GameObject:
   - component: {fileID: 96458968}
   - component: {fileID: 96458975}
   m_Layer: 0
-  m_Name: ButtonEight
+  m_Name: Jammu and Kashmir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 242119325}
   - component: {fileID: 242119332}
   m_Layer: 0
-  m_Name: ButtonFour
+  m_Name: Punjab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3115,7 +3115,7 @@ GameObject:
   - component: {fileID: 291310468}
   - component: {fileID: 291310475}
   m_Layer: 0
-  m_Name: ButtonFive
+  m_Name: Delhi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10176,7 +10176,7 @@ GameObject:
   - component: {fileID: 982256610}
   - component: {fileID: 982256617}
   m_Layer: 0
-  m_Name: ButtonSix
+  m_Name: Uttar Pradesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14605,7 +14605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1349610027
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14779,7 +14779,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349610026}
   m_LocalRotation: {x: -0, y: 0.24576288, z: -0, w: 0.96933}
-  m_LocalPosition: {x: 0.02769753, y: 0, z: 0.2841487}
+  m_LocalPosition: {x: 0.0518, y: 0, z: 0.2711}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1895747633}
@@ -15490,7 +15490,7 @@ GameObject:
   - component: {fileID: 1401541469}
   - component: {fileID: 1401541476}
   m_Layer: 0
-  m_Name: ButtonSeven
+  m_Name: Kerala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20250,7 +20250,7 @@ GameObject:
   - component: {fileID: 1778125397}
   - component: {fileID: 1778125404}
   m_Layer: 0
-  m_Name: ButtonOne
+  m_Name: Haryana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22463,10 +22463,12 @@ MonoBehaviour:
   CurrentDate: 
   CurrentRegion: 
   totalCases: 0
+  totalConfirmedRegional: 0
   confirmedCasesIndian: 0
   confirmedCasesForeign: 0
   discharged: 0
   deaths: 0
+  RegionPanel: {fileID: 1349610026}
 --- !u!4 &1991552823
 Transform:
   m_ObjectHideFlags: 0
@@ -23398,7 +23400,7 @@ GameObject:
   - component: {fileID: 2059150045}
   - component: {fileID: 2059150052}
   m_Layer: 0
-  m_Name: ButtonThree
+  m_Name: Karnataka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24372,7 +24374,7 @@ GameObject:
   - component: {fileID: 2108219068}
   - component: {fileID: 2108219075}
   m_Layer: 0
-  m_Name: ButtonTwo
+  m_Name: Maharashtra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

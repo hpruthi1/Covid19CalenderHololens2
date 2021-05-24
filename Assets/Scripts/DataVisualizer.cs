@@ -16,10 +16,13 @@ public class DataVisualizer : MonoBehaviour
     public string CurrentRegion;
 
     public int totalCases = 0;
+    public int totalConfirmedRegional = 0;
     public int confirmedCasesIndian = 0;
     public int confirmedCasesForeign = 0;
     public int discharged = 0;
     public int deaths = 0;
+
+    public GameObject RegionPanel;
 
     private JSONArray dataArray;
     private const string URL = "https://api.rootnet.in/covid19-in/stats/history";
@@ -60,6 +63,7 @@ public class DataVisualizer : MonoBehaviour
 
     public void PrintData(PressableButtonHoloLens2 SelectedButton)
     {
+        RegionPanel.SetActive(true);
         SelectedDate = SelectedButton;
         CurrentDate = SelectedDate.GetComponent<ButtonManager>().Label;
         for(int i = 0; i<dataArray.Count; i++)
@@ -84,5 +88,25 @@ public class DataVisualizer : MonoBehaviour
     {
         SelectedRegion = SelectedRegionButton;
         CurrentRegion = SelectedRegion.GetComponent<ButtonManager>().Label;
+
+        for (int j = 0; j < dataArray.Count; j++)
+        {
+            for (int i = 0; i < dataArray[j]["regional"].Count; i++)
+            {
+                if (dataArray[j]["regional"][i]["loc"] == CurrentRegion && dataArray[j]["day"]== CurrentDate)
+                {
+                    confirmedCasesIndian = dataArray[j]["regional"][i]["confirmedCasesIndian"].AsInt;
+                    confirmedCasesForeign = dataArray[j]["regional"][i]["confirmedCasesForeign"].AsInt;
+                    deaths = dataArray[j]["regional"][i]["deaths"].AsInt;
+                    discharged = dataArray[j]["regional"][i]["discharged"].AsInt;
+                    totalConfirmedRegional = dataArray[j]["regional"][i]["totalConfirmed"].AsInt;
+                    print(confirmedCasesIndian);
+                    print(confirmedCasesForeign);
+                    print(discharged);
+                    print(deaths);
+                    print(totalConfirmedRegional);
+                }
+            }
+        }
     }
 }
