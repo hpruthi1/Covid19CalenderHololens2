@@ -23,6 +23,7 @@ public class DataVisualizer : MonoBehaviour
     public int deaths = 0;
 
     public GameObject RegionPanel;
+    public TextMeshPro CurrentInfo;
     public TextMeshPro TotalConfirmedCases;
     public TextMeshPro ConfirmedCasesIndian;
     public TextMeshPro ConfirmedCasesForeign;
@@ -72,6 +73,7 @@ public class DataVisualizer : MonoBehaviour
         RegionPanel.SetActive(true);
         SelectedDate = SelectedButton;
         CurrentDate = SelectedDate.GetComponent<ButtonManager>().Label;
+        CurrentInfo.text = CurrentDate.ToString();
         for(int i = 0; i<dataArray.Count; i++)
         {
             if(CurrentDate == dataArray[i]["day"].Value)
@@ -94,6 +96,7 @@ public class DataVisualizer : MonoBehaviour
     {
         SelectedRegion = SelectedRegionButton;
         CurrentRegion = SelectedRegion.GetComponent<ButtonManager>().Label;
+        CurrentInfo.text = CurrentDate.ToString() + "  Region: " + CurrentRegion.ToString();
 
         for (int j = 0; j < dataArray.Count; j++)
         {
