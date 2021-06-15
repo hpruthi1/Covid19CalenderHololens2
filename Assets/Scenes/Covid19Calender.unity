@@ -511,6 +511,11 @@ MonoBehaviour:
   discharged: 0
   deaths: 0
   RegionPanel: {fileID: 8856817067517928333}
+  TotalConfirmedCases: {fileID: 5453988958766590714}
+  ConfirmedCasesIndian: {fileID: 5453988959346488592}
+  ConfirmedCasesForeign: {fileID: 8372473928097119538}
+  Deaths: {fileID: 5453988958313161186}
+  Discharged: {fileID: 5453988958239961842}
 --- !u!4 &1991552823
 Transform:
   m_ObjectHideFlags: 0
@@ -1552,7 +1557,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &1959965867957631732
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3592,7 +3597,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &5453988957824180651
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3730,7 +3735,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &5453988958239961841
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3907,7 +3912,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &5453988958313161185
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4142,7 +4147,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &5453988958548633997
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4261,7 +4266,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5453988958687190824
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4457,7 +4462,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &5453988958766590713
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4673,7 +4678,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &5453988958838503155
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -4961,7 +4966,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &5453988959346488599
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6017,7 +6022,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8372473928097119539
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6194,7 +6199,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8372473929286999785
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -8512,7 +8517,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817067610519015
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -8622,7 +8627,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817067634301523
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14302,7 +14307,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817068321329757
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -15022,7 +15027,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817068359461101
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -15396,7 +15401,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817068368490555
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -16382,7 +16387,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817068421728681
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -21358,7 +21363,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817069048582909
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -21801,7 +21806,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8856817069201762460
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -25580,7 +25585,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713043761248078
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -28327,7 +28332,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713043835777776
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -29992,7 +29997,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713043891025551
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -30204,7 +30209,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713043896377660
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -32496,7 +32501,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713043971348552
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -35857,7 +35862,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &8970713044092018032
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -40429,7 +40434,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713044209273332
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -45226,7 +45231,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713044325865605
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -45452,7 +45457,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8970713044340975698
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -45977,7 +45982,7 @@ MeshFilter:
   m_Mesh: {fileID: 0}
 --- !u!222 &8970713044368380792
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -49001,7 +49006,7 @@ GameObject:
   m_IsActive: 0
 --- !u!222 &8970713044464555056
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -52172,7 +52177,7 @@ GameObject:
   m_IsActive: 0
 --- !u!222 &8970713044542046898
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -52441,7 +52446,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713044545423377
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -56247,7 +56252,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713044663346625
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -56905,7 +56910,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713044684202739
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -59074,7 +59079,7 @@ MeshFilter:
   m_Mesh: {fileID: 4300010, guid: b566bbce04d66f4428421e81a3af0299, type: 3}
 --- !u!222 &8970713044763731480
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -61620,7 +61625,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713044888171175
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -65538,7 +65543,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045029369861
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -67488,7 +67493,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713045103291996
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -69048,7 +69053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!222 &8970713045152815066
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -69911,7 +69916,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713045192223076
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -70764,7 +70769,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045203145739
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -71505,7 +71510,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045241363949
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -71590,7 +71595,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8970713045242660770
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -71807,7 +71812,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!222 &8970713045247565362
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -72264,7 +72269,7 @@ GameObject:
   m_IsActive: 0
 --- !u!222 &8970713045273731416
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -73125,7 +73130,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713045320416724
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -82216,7 +82221,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045610839899
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -82360,7 +82365,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713045612523444
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -82913,7 +82918,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045624542749
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -83057,7 +83062,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713045628435660
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -85627,7 +85632,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045736681149
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -86068,7 +86073,7 @@ GameObject:
   m_IsActive: 1
 --- !u!222 &8970713045763687446
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -86431,7 +86436,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045782231309
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -87500,7 +87505,7 @@ MonoBehaviour:
   _SortingOrder: 0
 --- !u!222 &8970713045843949045
 CanvasRenderer:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

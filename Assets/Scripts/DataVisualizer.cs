@@ -23,6 +23,11 @@ public class DataVisualizer : MonoBehaviour
     public int deaths = 0;
 
     public GameObject RegionPanel;
+    public TextMeshPro TotalConfirmedCases;
+    public TextMeshPro ConfirmedCasesIndian;
+    public TextMeshPro ConfirmedCasesForeign;
+    public TextMeshPro Deaths;
+    public TextMeshPro Discharged;
 
     private JSONArray dataArray;
     private const string URL = "https://api.rootnet.in/covid19-in/stats/history";
@@ -72,15 +77,15 @@ public class DataVisualizer : MonoBehaviour
             if(CurrentDate == dataArray[i]["day"].Value)
             {
                 totalCases = dataArray[i]["summary"]["total"].AsInt;
-                print("totalCases" + totalCases);
+                TotalConfirmedCases.text = totalCases.ToString();
                 deaths = dataArray[i]["summary"]["deaths"].AsInt;
-                print("deaths" + deaths);
+                Deaths.text = deaths.ToString();
                 confirmedCasesIndian = dataArray[i]["summary"]["confirmedCasesIndian"].AsInt;
-                print("confirmedCasesIndian" + confirmedCasesIndian);
+                ConfirmedCasesIndian.text = confirmedCasesIndian.ToString();
                 confirmedCasesForeign = dataArray[i]["summary"]["confirmedCasesForeign"].AsInt;
-                print("confirmedCasesForeign" + confirmedCasesForeign);
+                ConfirmedCasesForeign.text = confirmedCasesForeign.ToString();
                 discharged = dataArray[i]["summary"]["discharged"].AsInt;
-                print("discharged" + discharged);
+                Discharged.text = discharged.ToString();
             }
         }
     }
@@ -97,15 +102,15 @@ public class DataVisualizer : MonoBehaviour
                 if (dataArray[j]["regional"][i]["loc"] == CurrentRegion && dataArray[j]["day"]== CurrentDate)
                 {
                     confirmedCasesIndian = dataArray[j]["regional"][i]["confirmedCasesIndian"].AsInt;
+                    ConfirmedCasesIndian.text = confirmedCasesIndian.ToString();
                     confirmedCasesForeign = dataArray[j]["regional"][i]["confirmedCasesForeign"].AsInt;
+                    ConfirmedCasesForeign.text = confirmedCasesForeign.ToString();
                     deaths = dataArray[j]["regional"][i]["deaths"].AsInt;
+                    Deaths.text = deaths.ToString();
                     discharged = dataArray[j]["regional"][i]["discharged"].AsInt;
+                    Discharged.text = discharged.ToString();
                     totalConfirmedRegional = dataArray[j]["regional"][i]["totalConfirmed"].AsInt;
-                    print(confirmedCasesIndian);
-                    print(confirmedCasesForeign);
-                    print(discharged);
-                    print(deaths);
-                    print(totalConfirmedRegional);
+                    TotalConfirmedCases.text = totalConfirmedRegional.ToString();
                 }
             }
         }
