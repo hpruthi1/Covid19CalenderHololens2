@@ -58,6 +58,7 @@ public class DataVisualizer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        RegionPanel.SetActive(false);
         StartCoroutine(LoadJSONfromWeb());
     }
 
